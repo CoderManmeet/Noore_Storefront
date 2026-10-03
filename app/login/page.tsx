@@ -1,0 +1,4 @@
+'use client'
+import Link from 'next/link'
+import { Field, Footer, Header } from '@/components/noore-commerce'
+export default function LoginPage() { return <main className="min-h-screen bg-[#f6f2eb] text-[#292522]"><Header cartCount={0} /><div className="mx-auto max-w-md px-5 py-16 md:py-24"><p className="text-center text-[10px] uppercase tracking-[0.28em] text-[#a66d54]">Welcome back</p><h1 className="mt-4 text-center font-serif text-5xl">Sign in.</h1><form className="mt-12 flex flex-col gap-7"><Field label="Email address" name="email" type="email" /><Field label="Password" name="password" type="password" /><button className="mt-3 min-h-12 bg-[#292522] text-[10px] uppercase tracking-[0.18em] text-white">Sign in</button></form><p className="mt-8 text-center text-sm text-[#756f67]">New to Noore? <Link href="/register" className="text-[#292522] underline underline-offset-4">Create an account</Link></p></div><Footer /></main> }
